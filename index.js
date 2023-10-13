@@ -16,10 +16,13 @@ const myComponent = function() {
     return(<div>String of Text</div>);
 }
 
-ReactDOM.render(comp, document.getElementById('root'));
 ReactDOM.render(
 <div>
     {comp}
     {myComponent()}
     <h1>Testing</h1>
 </div>, document.getElementById('root'));
+
+ReactDOM.render(
+<div>Second element</div>, document.getElementById('test'));
+
